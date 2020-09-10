@@ -10,11 +10,11 @@
 
 let keywords = ['пирсинг','тату', 'татуаж', 'pigment lab'];
 let keyword = keywords[getRandom(0,keywords.length)];
-let button = document.getElementsByName('button mini-suggest__button button_theme_websearch button_size_ws-head i-bem button_js_inited')[0];
+let button = document.getElementByClassName('button mini-suggest__button button_theme_websearch button_size_ws-head i-bem button_js_inited')[0];
 
 if (button != undefined){
     document.getElementsById('text')[0].value = keyword;
-    document.getElementsByClass('button mini-suggest__button button_theme_websearch button_size_ws-head i-bem button_js_inited')[0].click();
+    document.getElementsByClassName('button mini-suggest__button button_theme_websearch button_size_ws-head i-bem button_js_inited')[0].click();
 }else{
     let links = document.links;
 
